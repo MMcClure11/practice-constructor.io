@@ -6,8 +6,11 @@ const FizzBuzz = () => {
   const [fizzBuzz, setFizzBuzz] = useState('')
 
   const onClickHandler = () => {
-    if( (counter + 1) % 5 === 0 && (counter + 1) % 3 === 0 ) {
+    if ( (counter + 1) % 5 === 0 && (counter + 1) % 3 === 0 ) {
       setFizzBuzz('FizzBuzz')
+      setCounter(prevCount => prevCount + 1)
+    } else if ((counter + 1) % 3 === 0 ) {
+      setFizzBuzz('Fizz')
       setCounter(prevCount => prevCount + 1)
     } else {
     setFizzBuzz('')
