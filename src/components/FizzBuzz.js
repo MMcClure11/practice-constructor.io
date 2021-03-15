@@ -12,6 +12,9 @@ const FizzBuzz = () => {
     } else if ((counter + 1) % 3 === 0 ) {
       setFizzBuzz('Fizz')
       setCounter(prevCount => prevCount + 1)
+    } else if ((counter + 1) % 5 === 0) {
+      setFizzBuzz('Buzz')
+      setCounter(prevCount => prevCount + 1)
     } else {
     setFizzBuzz('')
     setCounter(prevCount => prevCount + 1)
