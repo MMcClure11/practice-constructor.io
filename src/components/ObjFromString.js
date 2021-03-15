@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const ObjFromString = () => {
 
-  const [string, setString] = useState('I have a lovely bunch of coconuts didly dum')
+  const [string, setString] = useState('')
   const [letter, setLetter] = useState('l')
   const [count, setCount] = useState(0)
   const [maxCount, setMaxCount] = useState('')
@@ -38,9 +38,12 @@ const ObjFromString = () => {
         maxCount = char
       } 
     }
-    console.log(chars)
-    console.log(maxCount)
     setMaxCount(maxCount)
+  }
+
+  const onChangeHandler = (e) => {
+    const { name, value } = e.target
+    setString(value)
   }
     
   return (
@@ -48,6 +51,10 @@ const ObjFromString = () => {
       <h1>Object from String</h1>
       <p>Turn a string into an object that counts the number of times a letter appeared in the string.</p>
       <p>Jordan had to do this for her Skilled Assessment</p>
+
+      <form>
+        <input type='text' placeholder='your string' name='string' onChange={ onChangeHandler } value={ string } />
+      </form>
 
       <button onClick={ onClickHandler }>Count of inputted letter.</button>
       <button onClick={ onClickMaxCharsHandler }>Most frequently used letter.</button>
