@@ -21,17 +21,21 @@ const FizzBuzz = () => {
     }
   }
 
-  console.log(counter, fizzBuzz)
-
   return (
     <div>
       <h1>FizzBuzz</h1>
       <h3>Click on the counter to see FizzBuzz in action!</h3>
+      <p>The FizzBuzz problem is a classic test given in coding interviews. 
+        The task is simple: Print integers 1 to N, 
+        but print “Fizz” if an integer is divisible by 3, 
+        “Buzz” if an integer is divisible by 5, and 
+        “FizzBuzz” if an integer is divisible by both 3 and 5.</p>
+      <h2>Counter</h2>
       { fizzBuzz !== '' 
       ? 
-      <h2>Count: { fizzBuzz }</h2>
+      <h2>{ fizzBuzz }</h2>
       :
-      <h2>Count: { counter }</h2>
+      <h2>{ counter }</h2>
       }
       <button onClick={ onClickHandler }>Counter</button>
     </div>
