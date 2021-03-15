@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const ObjFromString = () => {
 
   const [string, setString] = useState('')
-  const [letter, setLetter] = useState('l')
+  const [letter, setLetter] = useState('')
   const [count, setCount] = useState(0)
   const [maxCount, setMaxCount] = useState('')
 
@@ -43,7 +43,7 @@ const ObjFromString = () => {
 
   const onChangeHandler = (e) => {
     const { name, value } = e.target
-    setString(value)
+    name === 'string' ? setString(value) : setLetter(value)
   }
     
   return (
@@ -54,6 +54,7 @@ const ObjFromString = () => {
 
       <form>
         <input type='text' placeholder='your string' name='string' onChange={ onChangeHandler } value={ string } />
+        <input type='text' placeholder='your letter' maxLength='1' name='letter' onChange={ onChangeHandler } value={ letter } />
       </form>
 
       <button onClick={ onClickHandler }>Count of inputted letter.</button>
