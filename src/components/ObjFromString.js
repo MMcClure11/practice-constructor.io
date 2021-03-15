@@ -13,7 +13,7 @@ const ObjFromString = () => {
       charMap[ltr] ? charMap[ltr]++ : charMap[ltr] = 1
     }
     let result = charMap[char]
-    setCount(result)
+    result ? setCount(result) : setCount(0)
   }
 
   const onClickHandler = () => {
