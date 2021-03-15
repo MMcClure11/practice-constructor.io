@@ -22,12 +22,12 @@ const ObjFromString = () => {
   }
 
   const onClickMaxCharsHandler = () => {
+    let stringNoSpaces = string.replace(/\s/g, '').toLowerCase();
     let chars = {}
     let max = 0; 
     let maxCount = '';
 
-
-    for (let char of string) {
+    for (let char of stringNoSpaces) {
       chars[char] ? chars[char]++ : chars[char] = 1
     }
 
@@ -37,10 +37,9 @@ const ObjFromString = () => {
         maxCount = char
       } 
     }
-    console.log(max)
-    console.log(chars[' '])
+    console.log(chars)
     console.log(maxCount)
-    return maxCount  //It's not working silly because it's counting spaces!
+    return maxCount
   }
     
   return (
