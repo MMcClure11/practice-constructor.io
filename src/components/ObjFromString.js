@@ -17,8 +17,6 @@ const ObjFromString = () => {
   }
 
   const onClickHandler = () => {
-    // setString("I've got a lovely bunch of coconuts, didly dum")
-    // setLetter("l")
     countLetters(string, letter)
   }
 
@@ -61,7 +59,7 @@ const ObjFromString = () => {
       <button onClick={ onClickMaxCharsHandler }>Most frequently used letter.</button>
       <h2>String: { string }</h2>
       <h2>Letter: { letter }</h2>
-      <h2>Count: { count }</h2>
+      <h2>Your Selected Letter Appears { count } times</h2>
       { maxCount && <h2>Most Used Letter: { maxCount }</h2> }
     </div>
   )
