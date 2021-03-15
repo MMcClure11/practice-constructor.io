@@ -20,6 +20,28 @@ const ObjFromString = () => {
     // setLetter("l")
     countLetters(string, letter)
   }
+
+  const onClickMaxCharsHandler = () => {
+    let chars = {}
+    let max = 0; 
+    let maxCount = '';
+
+
+    for (let char of string) {
+      chars[char] ? chars[char]++ : chars[char] = 1
+    }
+
+    for (let char in chars){
+      if (chars[char] > max) {
+        max = chars[char]
+        maxCount = char
+      } 
+    }
+    console.log(max)
+    console.log(chars[' '])
+    console.log(maxCount)
+    return maxCount  //It's not working silly because it's counting spaces!
+  }
     
   return (
     <div>
@@ -27,7 +49,8 @@ const ObjFromString = () => {
       <p>Turn a string into an object that counts the number of times a letter appeared in the string.</p>
       <p>Jordan had to do this for her Skilled Assessment</p>
 
-      <button onClick={ onClickHandler }>Click me to get the count!</button>
+      <button onClick={ onClickHandler }>Count of inputted letter.</button>
+      <button onClick={ onClickMaxCharsHandler }>Most frequently used letter.</button>
       <h2>String: { string }</h2>
       <h2>Letter: { letter }</h2>
       <h2>Count: { count }</h2>
