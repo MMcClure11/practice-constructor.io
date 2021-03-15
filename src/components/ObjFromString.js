@@ -8,12 +8,11 @@ const ObjFromString = () => {
 
   const countLetters = (str, char) => {
     let charMap = {}
-    console.log(str)
     for(let ltr of str) {
       charMap[ltr] ? charMap[ltr]++ : charMap[ltr] = 1
     }
-    console.log(charMap)
-    setCount(99)
+    let result = charMap[char]
+    setCount(result)
   }
 
   const onClickHandler = () => {
