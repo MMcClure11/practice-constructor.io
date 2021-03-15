@@ -59,7 +59,7 @@ const ObjFromString = () => {
       <button onClick={ onClickMaxCharsHandler }>Most frequently used letter.</button>
       <h2>String: { string }</h2>
       <h2>Letter: { letter }</h2>
-      <h2>Your Selected Letter Appears { count } times</h2>
+      <h2>Your Selected Letter Appears { count } time{ count !== 1 && 's' }</h2>
       { maxCount && <h2>Most Used Letter: { maxCount }</h2> }
     </div>
   )
