@@ -5,6 +5,7 @@ const ObjFromString = () => {
   const [string, setString] = useState('I have a lovely bunch of coconuts didly dum')
   const [letter, setLetter] = useState('l')
   const [count, setCount] = useState(0)
+  const [maxCount, setMaxCount] = useState('')
 
   const countLetters = (str, char) => {
     let charMap = {}
@@ -39,7 +40,7 @@ const ObjFromString = () => {
     }
     console.log(chars)
     console.log(maxCount)
-    return maxCount
+    setMaxCount(maxCount)
   }
     
   return (
@@ -53,6 +54,7 @@ const ObjFromString = () => {
       <h2>String: { string }</h2>
       <h2>Letter: { letter }</h2>
       <h2>Count: { count }</h2>
+      { maxCount && <h2>Most Used Letter: { maxCount }</h2> }
     </div>
   )
 }
