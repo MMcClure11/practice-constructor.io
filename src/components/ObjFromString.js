@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ObjFromString = () => {
+
+  const [string, setString] = useState('')
+  const [letter, setLetter] = useState('')
+  const [count, setCount] = useState(0)
+
+  const countLetters = (str, char) => {
+    setCount(99)
+  }
+
+  const onClickHandler = () => {
+    setString("I've got a lovely bunch of coconuts, didly dum")
+    setLetter("l")
+    countLetters(string, letter)
+  }
+
   return (
     <div>
       <h1>Object from String</h1>
+      <p>Turn a string into an object that counts the number of times a letter appeared in the string.</p>
       <p>Jordan had to do this for her Skilled Assessment</p>
+
+      <button onClick={ onClickHandler }>Click me to set the string and letter</button>
+      <h2>String: { string }</h2>
+      <h2>Letter: { letter }</h2>
+      <h2>Count: { count }</h2>
     </div>
   )
 }
