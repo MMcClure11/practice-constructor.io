@@ -21,6 +21,11 @@ const FizzBuzz = () => {
     }
   }
 
+  const onClickResetHandler = () => {
+    setFizzBuzz('')
+    setCounter(0)
+  }
+
   return (
     <div>
       <h1>FizzBuzz</h1>
@@ -38,6 +43,7 @@ const FizzBuzz = () => {
       <h2>{ counter }</h2>
       }
       <button onClick={ onClickHandler }>Counter</button>
+      <button onClick={ onClickResetHandler }>Reset</button>
     </div>
   )
 }
