@@ -19,8 +19,12 @@ class Hello extends Component {
     this.setState({ helloTranslations: this.props.helloTranslations.filter( trans => trans !== 'Hello')})
   }
 
+  logTranslation = (trans) => {
+    console.log(trans)
+  }
+
   renderTranslations = () => {
-    return this.state.helloTranslations.map( trans => <li key={ trans }><button>{ trans }</button></li>)
+    return this.state.helloTranslations.map( trans => <li key={ trans }><button onClick={ () => this.logTranslation(trans) }>{ trans }</button></li>)
   }
 
   render() {
