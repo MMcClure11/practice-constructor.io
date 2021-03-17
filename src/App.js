@@ -8,6 +8,9 @@ import Multiply from './components/Multiply';
 import Hello from './components/Hello';
 
 const App = () => {
+
+  // const helloTranslations = ['Hello', 'Bonjour', 'Konnichiwa', 'God dag', 'Namaste']
+  const helloTranslations = 'https://hello/translations'
   return (
     <Router>
       <div className="App">
@@ -35,7 +38,7 @@ const App = () => {
           <Route path='/fizzbuzz'><FizzBuzz /></Route>
           <Route path='/objfromstring'><ObjFromString /></Route>
           <Route path='/multiply'><Multiply /></Route>
-          <Route path='/hello'><Hello /></Route>
+          <Route path='/hello'><Hello helloTranslations={ helloTranslations } /></Route>
           <Route path='/'><Home /></Route>
         </Switch>
       </div>

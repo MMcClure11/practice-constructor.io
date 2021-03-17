@@ -9,6 +9,12 @@ class Hello extends Component {
     };
   }
 
+  componentDidMount(){
+    fetch(this.props.helloTranslations)
+      .then(res => res.json())
+      .then(data => console.log(data))
+  }
+
   render() {
   return (
     <div>

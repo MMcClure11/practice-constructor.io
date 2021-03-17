@@ -9,3 +9,4 @@ Challenges to complete:
 
 [X] Build a react class component called hello that returns an h1 of “Hello”.
 [X] Build a constructor that could accept props and set an initial state of helloTranslations set to an empty array.
+[] You have a fake endpoint ‘https://hello/translations’, you have access to it as this.props.helloTranslations. Set up a componentDidMount and a fetch request to the endpoint.
