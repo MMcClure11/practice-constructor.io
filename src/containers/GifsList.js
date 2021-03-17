@@ -1,6 +1,7 @@
 import React from 'react'
 
-const GifsList = () => {
+const GifsList = (props) => {
+  console.log(props.gifs)
   return (
     <div>
       <h1>Check out these cool gifs your search returned!</h1>

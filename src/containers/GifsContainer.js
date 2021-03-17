@@ -12,11 +12,10 @@ const GifsContainer = () => {
       .then(data => setGifs(data.data))
   }
 
-  console.log(gifs)
   return (
     <div>
       <GifSearch setGifsHandler={ setGifsHandler } />
-      <GifsList />
+      <GifsList gifs={ gifs } />
     </div>
   )
 }
