@@ -22,4 +22,5 @@ Challenges to complete:
 [] make click counter
 [] make click counter with a second interval
 
-[] make a fetch to the giphy api
+[X] make a fetch to the giphy api
+[] display the gifs

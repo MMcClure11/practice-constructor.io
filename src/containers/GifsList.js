@@ -1,11 +1,15 @@
 import React from 'react'
+import GifCard from '../components/GifCard'
 
-const GifsList = (props) => {
-  console.log(props.gifs)
+const GifsList = ({ gifs }) => {
+
+  const renderGifs = () => {
+    return gifs.map(gif => <GifCard key={ gif.id } {...gif} />)
+  }
   return (
     <div>
-      <h1>Check out these cool gifs your search returned!</h1>
-      <p>I will map through each gif to make a card for it</p>
+      <h3>Check out these cool gifs your search returned!</h3>
+      { renderGifs() }
     </div>
   )
 }
