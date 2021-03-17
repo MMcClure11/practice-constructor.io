@@ -10,6 +10,8 @@ Challenges to complete:
 [X] Build a react class component called hello that returns an h1 of “Hello”.
 [X] Build a constructor that could accept props and set an initial state of helloTranslations set to an empty array.
 [X] You have a fake endpoint ‘https://hello/translations’, you have access to it as this.props.helloTranslations. Set up a componentDidMount and a fetch request to the endpoint.
+  *remember fetch syntax
 [X] That data returns an array data.translations = ['Hola', 'Bonjour', 'Hello', etc.], access that array and set your state of helloTranslations equal to that array but exclude 'Hello'.
-[]  iterate through the data in your state and make each translation a button inside an li.
+[X]  iterate through the data in your state and make each translation a button inside an li.
     display that data: <li><button>Hola</button></li>
+    *remember to invoke renderTranslations and to return the mapped data

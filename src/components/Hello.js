@@ -19,7 +19,9 @@ class Hello extends Component {
     this.setState({ helloTranslations: this.props.helloTranslations.filter( trans => trans !== 'Hello')})
   }
 
-
+  renderTranslations = () => {
+    return this.state.helloTranslations.map( trans => <li key={ trans }><button>{ trans }</button></li>)
+  }
 
   render() {
     console.log(this.state)
@@ -27,7 +29,7 @@ class Hello extends Component {
     <div>
       <h1>Hello</h1>
       <ul>
-        { this.translations }
+        { this.renderTranslations() }
       </ul>
     </div>
   )
