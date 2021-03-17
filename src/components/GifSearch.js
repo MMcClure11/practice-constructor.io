@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
-const GifSearch = () => {
+const GifSearch = ({ setGifsHandler }) => {
 
   const [ query, setQuery ] = useState('')
-
-  const searchHandler = (e) => {
-    e.preventDefault()
-    alert('searched!')
-  }
 
   const onChangeHandler = (e) => {
     const { name, value } = e.target
     setQuery(value)
+  }
+
+  const searchHandler = (e) => {
+    e.preventDefault()
+    setGifsHandler(query)
+    setQuery('')
   }
 
   return (
