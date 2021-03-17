@@ -43,7 +43,7 @@ const App = () => {
           <Route path='/objfromstring'><ObjFromString /></Route>
           <Route path='/multiply'><Multiply /></Route>
           <Route path='/hello'><Hello helloTranslations={ helloTranslations } /></Route>
-          <Route path='/hellofunctional'><FunctionalHello helloTranslations={ endpoint } /></Route>
+          <Route path='/hellofunctional'><FunctionalHello helloTranslations={ helloTranslations } /></Route>
           <Route path='/'><Home /></Route>
         </Switch>
       </div>
