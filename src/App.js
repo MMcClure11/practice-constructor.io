@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/Home'
@@ -13,7 +13,7 @@ import GifsContainer from './containers/GifsContainer';
 const App = () => {
 
   const helloTranslations = ['Hello', 'Bonjour', 'Konnichiwa', 'God dag', 'Namaste']
-  const endpoint = 'https://hello/translations'
+  // const endpoint = 'https://hello/translations'
   return (
     <Router>
       <div className="App">

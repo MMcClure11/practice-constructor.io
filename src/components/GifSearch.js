@@ -5,7 +5,7 @@ const GifSearch = ({ setGifsHandler }) => {
   const [ query, setQuery ] = useState('')
 
   const onChangeHandler = (e) => {
-    const { name, value } = e.target
+    const { value } = e.target
     setQuery(value)
   }
 
