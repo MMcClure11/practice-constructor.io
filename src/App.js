@@ -7,6 +7,7 @@ import ObjFromString from './components/ObjFromString';
 import Multiply from './components/Multiply';
 import Hello from './components/Hello';
 import FunctionalHello from './components/FunctionalHello'
+import NavBar from './containers/NavBar';
 
 const App = () => {
 
@@ -15,29 +16,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <nav>
-          <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/fizzbuzz'>FizzBuzz</Link>
-            </li>
-            <li>
-              <Link to='/objfromstring'>ObjFromString</Link>
-            </li>
-            <li>
-              <Link to='/multiply'>Multiply</Link>
-            </li>
-            <li>
-              <Link to='/hello'>Hello</Link>
-            </li>
-            <li>
-              <Link to='/hellofunctional'>Hello Functional</Link>
-            </li>
-          </ul>
-        </nav>
-
+        <NavBar />
         <Switch>
           <Route path='/fizzbuzz'><FizzBuzz /></Route>
           <Route path='/objfromstring'><ObjFromString /></Route>

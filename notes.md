@@ -18,7 +18,7 @@ Challenges to complete:
 [X] write a function that when the button is clicked, it console.logs the translation
 [X] Awesome, do it again with a functional component
 
-[] Make NavBar
+[X] Make NavBar
 [] make click counter
 [] make click counter with a second interval
 
