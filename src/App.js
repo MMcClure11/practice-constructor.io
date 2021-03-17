@@ -11,7 +11,7 @@ import FunctionalHello from './components/FunctionalHello'
 const App = () => {
 
   const helloTranslations = ['Hello', 'Bonjour', 'Konnichiwa', 'God dag', 'Namaste']
-  // const helloTranslations = 'https://hello/translations'
+  const endpoint = 'https://hello/translations'
   return (
     <Router>
       <div className="App">
@@ -43,7 +43,7 @@ const App = () => {
           <Route path='/objfromstring'><ObjFromString /></Route>
           <Route path='/multiply'><Multiply /></Route>
           <Route path='/hello'><Hello helloTranslations={ helloTranslations } /></Route>
-          <Route path='/hellofunctional'><FunctionalHello /></Route>
+          <Route path='/hellofunctional'><FunctionalHello helloTranslations={ endpoint } /></Route>
           <Route path='/'><Home /></Route>
         </Switch>
       </div>
