@@ -9,4 +9,5 @@ Challenges to complete:
 
 [X] Build a react class component called hello that returns an h1 of “Hello”.
 [X] Build a constructor that could accept props and set an initial state of helloTranslations set to an empty array.
-[] You have a fake endpoint ‘https://hello/translations’, you have access to it as this.props.helloTranslations. Set up a componentDidMount and a fetch request to the endpoint.
+[X] You have a fake endpoint ‘https://hello/translations’, you have access to it as this.props.helloTranslations. Set up a componentDidMount and a fetch request to the endpoint.
+[] That data returns an array data.translations = ['Hola', 'Bonjour', 'Hello', etc.], access that array and set your state of helloTranslations equal to that array but exclude 'Hello'

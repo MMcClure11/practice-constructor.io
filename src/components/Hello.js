@@ -12,7 +12,10 @@ class Hello extends Component {
   componentDidMount(){
     fetch(this.props.helloTranslations)
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        let arr = data.translations.filter(translation => translation !== 'Hello')
+        this.setState({helloTranslations: arr})
+      })
   }
 
   render() {
