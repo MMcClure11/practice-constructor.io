@@ -4,8 +4,9 @@ import GifCard from '../components/GifCard'
 const GifsList = ({ gifs }) => {
 
   const renderGifs = () => {
-    return gifs.map(gif => <GifCard key={ gif.id } {...gif} />)
+    return gifs.map(gif => <GifCard key={ gif.id } gif={ gif } />)
   }
+  console.log(gifs)
   return (
     <div>
       <h3>Check out these cool gifs your search returned!</h3>

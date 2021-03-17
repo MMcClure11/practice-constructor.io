@@ -1,9 +1,10 @@
 import React from 'react'
 
-const GifCard = () => {
+const GifCard = ({ gif }) => {
+  console.log(gif)
   return (
     <div>
-      i am a gif card
+      <p>I am a gif with id: { gif.id }</p>
     </div>
   )
 }
