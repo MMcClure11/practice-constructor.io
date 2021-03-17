@@ -13,8 +13,12 @@ const FunctionalHello = ({ helloTranslations }) => {
     setTranslations(helloTranslations.filter(trans => trans !== 'Hello'))
   }, [])
 
+  const logTranslation = (translation) => {
+    console.log(translation)
+  }
+
   const renderTranslations = () => {
-    return translations.map(trans => <li key={ trans }><button>{ trans }</button></li>)
+    return translations.map(trans => <li key={ trans }><button onClick={ () => logTranslation(trans) }>{ trans }</button></li>)
   }
 
   return (
