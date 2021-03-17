@@ -16,3 +16,4 @@ Challenges to complete:
     display that data: <li><button>Hola</button></li>
     *remember to invoke renderTranslations and to return the mapped data
 [X] write a function that when the button is clicked, it console.logs the translation
+[] Awesome, do it again with a functional component

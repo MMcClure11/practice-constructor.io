@@ -6,6 +6,7 @@ import FizzBuzz from './components/FizzBuzz'
 import ObjFromString from './components/ObjFromString';
 import Multiply from './components/Multiply';
 import Hello from './components/Hello';
+import FunctionalHello from './components/FunctionalHello'
 
 const App = () => {
 
@@ -31,6 +32,9 @@ const App = () => {
             <li>
               <Link to='/hello'>Hello</Link>
             </li>
+            <li>
+              <Link to='/hellofunctional'>Hello Functional</Link>
+            </li>
           </ul>
         </nav>
 
@@ -39,6 +43,7 @@ const App = () => {
           <Route path='/objfromstring'><ObjFromString /></Route>
           <Route path='/multiply'><Multiply /></Route>
           <Route path='/hello'><Hello helloTranslations={ helloTranslations } /></Route>
+          <Route path='/hellofunctional'><FunctionalHello /></Route>
           <Route path='/'><Home /></Route>
         </Switch>
       </div>
