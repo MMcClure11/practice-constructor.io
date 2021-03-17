@@ -9,8 +9,8 @@ import Hello from './components/Hello';
 
 const App = () => {
 
-  // const helloTranslations = ['Hello', 'Bonjour', 'Konnichiwa', 'God dag', 'Namaste']
-  const helloTranslations = 'https://hello/translations'
+  const helloTranslations = ['Hello', 'Bonjour', 'Konnichiwa', 'God dag', 'Namaste']
+  // const helloTranslations = 'https://hello/translations'
   return (
     <Router>
       <div className="App">
