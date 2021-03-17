@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Hello = () => {
+class Hello extends Component {
+  render() {
   return (
     <div>
-      Hello World
+      <h1>Hello</h1>
     </div>
   )
+  }
 }
 
 export default Hello

@@ -7,4 +7,4 @@ Challenges to complete:
 [X] make counter display the fizz-buzz algo
 [X] determine how to make the function multiply(5)(6) return 30 using nested functions.
 
-[] ‘Build a react class component called hello that returns an h1 of “Hello”.
+[X] ‘Build a react class component called hello that returns an h1 of “Hello”.
