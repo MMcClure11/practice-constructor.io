@@ -1,10 +1,10 @@
 import React from 'react'
 
 const GifCard = ({ gif }) => {
-  console.log(gif)
   return (
     <div>
-      <p>I am a gif with id: { gif.id }</p>
+      <h4> { gif.title.toUpperCase() }</h4>
+      <img src={ gif.images.original.url} alt={ gif.title} />
     </div>
   )
 }
