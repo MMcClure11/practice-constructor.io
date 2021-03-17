@@ -16,6 +16,14 @@ const Multiply = () => {
       <h2>Jordan's Skilled Multiply Test</h2>
       <p>How can you make the function multiply(5)(6) return 30?</p>
       <button onClick={ onClickHandler }>Multiply</button>
+      <code>
+        <p>
+          {`const multiply = (num) => {
+            return (num2) => num * num2
+          }`}
+        </p>
+      </code>
+      <p>Answer: nested function calls!</p>
       <h1>Product: { product }</h1>
     </div>
   )
