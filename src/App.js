@@ -8,6 +8,7 @@ import Multiply from './components/Multiply';
 import Hello from './components/Hello';
 import FunctionalHello from './components/FunctionalHello'
 import NavBar from './containers/NavBar';
+import GifsContainer from './containers/GifsContainer';
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='/multiply'><Multiply /></Route>
           <Route path='/hello'><Hello helloTranslations={ helloTranslations } /></Route>
           <Route path='/hellofunctional'><FunctionalHello helloTranslations={ helloTranslations } /></Route>
+          <Route path='/gifs'><GifsContainer /></Route>
           <Route path='/'><Home /></Route>
         </Switch>
       </div>

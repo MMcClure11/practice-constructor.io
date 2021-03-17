@@ -23,6 +23,9 @@ const NavBar = () => {
         <li>
           <NavLink to='/hellofunctional'>Hello Functional</NavLink>
         </li>
+        <li>
+          <NavLink to='/gifs'>Gifs</NavLink>
+        </li>
       </ul>
     </div>
   )
