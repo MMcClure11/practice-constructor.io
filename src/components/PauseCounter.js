@@ -29,6 +29,10 @@ class PauseCounter extends Component {
     this.setState({count: 0})
   }
 
+  componentWillUnmount(){
+    clearInterval(this.interval)
+  }
+
   render(){
     return(
       <div>
