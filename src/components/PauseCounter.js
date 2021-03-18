@@ -41,6 +41,7 @@ class PauseCounter extends Component {
         <button onClick={ this.start }>Start</button>
         <button onClick={ this.pause }>Pause</button>
         <button onClick={ this.reset }>Reset</button>
+        <button onClick={ this.increment }>Increment</button>
       </div>
     )
   }

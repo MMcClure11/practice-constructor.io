@@ -17,11 +17,11 @@ Challenges to complete:
     *remember to invoke renderTranslations and to return the mapped data
 [X] write a function that when the button is clicked, it console.logs the translation
 [X] Awesome, do it again with a functional component
-
+***************
 [X] Make NavBar
 [X] make click counter
 [X] make click counter with a second interval
-[] import a class component with a pausable counter, because using hooks is far more complicated than anticipated with the setInterval api: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
+[X] import a class component with a pausable counter, because using hooks is far more complicated than anticipated with the setInterval api: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 
 [X] make a fetch to the giphy api
 [X] display the gifs
