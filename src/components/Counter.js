@@ -4,13 +4,10 @@ const Counter = () => {
 
   const [count, setCount] = useState(0)
   const [counter, setCounter] = useState(0)
+  const [pausableCounter, setPausableCounter] = useState(0)
 
   const increase = () => {
     setCount(prevCount => prevCount + 1)
-  }
-
-  const increaseCounter = () => {
-    setCounter(prevCount => prevCount + 1)
   }
 
   const decrease = () => {
@@ -21,6 +18,10 @@ const Counter = () => {
 
   const reset = () => {
     setCount(0)
+  }
+
+  const increaseCounter = () => {
+    setCounter(prevCount => prevCount + 1)
   }
 
   useEffect(() => {
@@ -48,10 +49,13 @@ const Counter = () => {
       <button onClick={ decrease }>-</button>
       <button onClick={ reset }>0</button>
       <h1>I am a counter set on a one second interval.</h1>
+      <p>I am built with useEffect.</p>
       <h2>Count: { counter }</h2>
       <button onClick={ increaseCounter }>+</button>
       <button onClick={ decreaseCounter }>-</button>
       <button onClick={ resetCounter }>0</button>
+      <h1>I am a counter you can start and stop.</h1>
+      <h2>Count: { pausableCounter }</h2>
     </div>
   )
 }
