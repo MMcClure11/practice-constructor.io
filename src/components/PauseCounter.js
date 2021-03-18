@@ -25,6 +25,10 @@ class PauseCounter extends Component {
     clearInterval(this.interval)
   }
 
+  reset = () => {
+    this.setState({count: 0})
+  }
+
   render(){
     return(
       <div>
@@ -32,6 +36,7 @@ class PauseCounter extends Component {
         <h2>Count: { this.state.count }</h2>
         <button onClick={ this.start }>Start</button>
         <button onClick={ this.pause }>Pause</button>
+        <button onClick={ this.reset }>Reset</button>
       </div>
     )
   }
