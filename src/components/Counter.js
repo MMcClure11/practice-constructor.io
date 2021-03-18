@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Counter = () => {
 
   const [count, setCount] = useState(0)
+  const [interval, setInterval] = useState(0)
 
   const increase = () => {
     setCount(prevCount => prevCount + 1)
@@ -20,6 +21,8 @@ const Counter = () => {
       <h2>Count: { count }</h2>
       <button onClick={ increase }>+</button>
       <button onClick={ decrease }>-</button>
+      <h1>I am a counter set on a one second interval.</h1>
+      <h2>Count: { interval }</h2>
     </div>
   )
 }
