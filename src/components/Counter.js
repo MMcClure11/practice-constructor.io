@@ -9,7 +9,9 @@ const Counter = () => {
   }
 
   const decrease = () => {
-    setCount(prevCount => prevCount - 1)
+    count - 1 >= 0 
+    ? setCount(prevCount => prevCount - 1)
+    : alert("Can't decrease below zero. Sorry!")
   }
 
   return (
