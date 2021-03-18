@@ -29,6 +29,12 @@ class PauseCounter extends Component {
     this.setState({count: 0})
   }
 
+  decrement = () => {
+    this.setState((prevState) => ({
+      count: prevState.count - 1
+    }))
+  }
+
   componentWillUnmount(){
     clearInterval(this.interval)
   }
@@ -42,6 +48,7 @@ class PauseCounter extends Component {
         <button onClick={ this.pause }>Pause</button>
         <button onClick={ this.reset }>Reset</button>
         <button onClick={ this.increment }>Increment</button>
+        <button onClick={ this.decrement }>Decrement</button>
       </div>
     )
   }
