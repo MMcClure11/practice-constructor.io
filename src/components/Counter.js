@@ -52,7 +52,13 @@ const Counter = () => {
    }, 1000)
  }
 
-  
+// const pause = () => {
+//   clearInterval(interval)
+// }  
+
+const resetPausableCounter = () => {
+  setPausableCounter(0)
+} 
 
   return (
     <div>
@@ -70,6 +76,8 @@ const Counter = () => {
       <h1>I am a counter you can start and stop.</h1>
       <h2>Count: { pausableCounter }</h2>
       <button onClick={ start }>Start</button>
+      {/* <button onClick={ pause }>Pause</button> */}
+      <button onClick={ resetPausableCounter }>0</button>
     </div>
   )
 }
