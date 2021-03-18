@@ -8,11 +8,16 @@ const Counter = () => {
     setCount(prevCount => prevCount + 1)
   }
 
+  const decrease = () => {
+    setCount(prevCount => prevCount - 1)
+  }
+
   return (
     <div>
       <h1>I am a counter that you can manually click.</h1>
       <h2>Count: { count }</h2>
       <button onClick={ increase }>+</button>
+      <button onClick={ decrease }>-</button>
     </div>
   )
 }
