@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Countdown from './Countdown';
 import PauseCounter from './PauseCounter';
 
 const Counter = () => {
@@ -56,6 +57,7 @@ const Counter = () => {
       <button onClick={ resetCounter }>0</button>
       <h1>I am a counter you can start and stop.</h1>
       <PauseCounter />
+      <Countdown />
     </div>
   )
 }

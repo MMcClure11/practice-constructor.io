@@ -22,6 +22,7 @@ Challenges to complete:
 [X] make click counter
 [X] make click counter with a second interval
 [X] import a class component with a pausable counter, because using hooks is far more complicated than anticipated with the setInterval api: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
+[] make a 2 min countdown
 
 [X] make a fetch to the giphy api
 [X] display the gifs
