@@ -5,7 +5,7 @@ export default class Countdown extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      minutes: 1,
+      minutes: 2,
       seconds: 0
     }
   }
@@ -29,6 +29,10 @@ export default class Countdown extends Component {
     }, 1000)
   }
 
+  pause = () => {
+    clearInterval(this.interval)
+  }
+
   componentWillUnmount(){
     clearInterval(this.interval)
   }
@@ -39,6 +43,7 @@ export default class Countdown extends Component {
         <h1>I count down from 2 minutes</h1>
         <h3>Minutes: { this.state.minutes } Seconds: { this.state.seconds }</h3>
         <button onClick={ this.start }>Start</button>
+        <button onClick={ this.pause }>Pause</button>
       </div>
     )
   }
