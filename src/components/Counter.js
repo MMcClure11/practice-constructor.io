@@ -4,11 +4,15 @@ const Counter = () => {
 
   const [count, setCount] = useState(0)
 
+  const increase = () => {
+    setCount(prevCount => prevCount + 1)
+  }
+
   return (
     <div>
       <h1>I am a counter that you can manually click.</h1>
       <h2>Count: { count }</h2>
-      <button>+</button>
+      <button onClick={ increase }>+</button>
     </div>
   )
 }
