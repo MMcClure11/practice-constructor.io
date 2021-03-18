@@ -23,6 +23,9 @@ const Counter = () => {
     const timer = setInterval( () => {
       increaseCounter()
     }, 1000)
+    return () => {
+      clearInterval(timer)
+    }
   }, [])
 
   return (
