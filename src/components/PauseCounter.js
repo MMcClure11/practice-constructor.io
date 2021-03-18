@@ -10,7 +10,7 @@ class PauseCounter extends Component {
   }
 
   increment = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       count: prevState.count + 1 
     }))
   }
@@ -21,12 +21,17 @@ class PauseCounter extends Component {
     }, 1000)
   }
 
+  pause = () => {
+    clearInterval(this.interval)
+  }
+
   render(){
     return(
       <div>
         I am the pause counter component
         <h2>Count: { this.state.count }</h2>
         <button onClick={ this.start }>Start</button>
+        <button onClick={ this.pause }>Pause</button>
       </div>
     )
   }
