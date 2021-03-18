@@ -19,6 +19,10 @@ const Counter = () => {
     : alert("Can't decrease below zero. Sorry!")
   }
 
+  const reset = () => {
+    setCount(0)
+  }
+
   useEffect(() => {
     const timer = setInterval( () => {
       increaseCounter()
@@ -34,6 +38,7 @@ const Counter = () => {
       <h2>Count: { count }</h2>
       <button onClick={ increase }>+</button>
       <button onClick={ decrease }>-</button>
+      <button onClick={ reset }>0</button>
       <h1>I am a counter set on a one second interval.</h1>
       <h2>Count: { counter }</h2>
     </div>
