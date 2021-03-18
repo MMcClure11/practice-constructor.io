@@ -4,7 +4,6 @@ const Counter = () => {
 
   const [count, setCount] = useState(0)
   const [counter, setCounter] = useState(0)
-  const [pausableCounter, setPausableCounter] = useState(0)
 
   const increase = () => {
     setCount(prevCount => prevCount + 1)
@@ -41,6 +40,20 @@ const Counter = () => {
     setCounter(prevCount => prevCount - 1)
   }
 
+  const [pausableCounter, setPausableCounter] = useState(0)
+
+  const increasePausableCounter = () => {
+    setPausableCounter(prevCount => prevCount + 1)
+  }
+
+ const start = () => {
+   const interval = setInterval(() => {
+     increasePausableCounter()
+   }, 1000)
+ }
+
+  
+
   return (
     <div>
       <h1>I am a counter that you can manually click.</h1>
@@ -56,6 +69,7 @@ const Counter = () => {
       <button onClick={ resetCounter }>0</button>
       <h1>I am a counter you can start and stop.</h1>
       <h2>Count: { pausableCounter }</h2>
+      <button onClick={ start }>Start</button>
     </div>
   )
 }
