@@ -36,6 +36,10 @@ const Counter = () => {
     setCounter(0)
   }
 
+  const decreaseCounter = () => {
+    setCounter(prevCount => prevCount - 1)
+  }
+
   return (
     <div>
       <h1>I am a counter that you can manually click.</h1>
@@ -45,6 +49,8 @@ const Counter = () => {
       <button onClick={ reset }>0</button>
       <h1>I am a counter set on a one second interval.</h1>
       <h2>Count: { counter }</h2>
+      <button onClick={ increaseCounter }>+</button>
+      <button onClick={ decreaseCounter }>-</button>
       <button onClick={ resetCounter }>0</button>
     </div>
   )
