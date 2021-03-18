@@ -19,8 +19,9 @@ Challenges to complete:
 [X] Awesome, do it again with a functional component
 
 [X] Make NavBar
-[] make click counter
-[] make click counter with a second interval
+[X] make click counter
+[X] make click counter with a second interval
+[] import a class component with a pausable counter, because using hooks is far more complicated than anticipated with the setInterval api: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 
 [X] make a fetch to the giphy api
 [X] display the gifs
