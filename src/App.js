@@ -9,6 +9,7 @@ import Hello from './components/Hello';
 import FunctionalHello from './components/FunctionalHello'
 import NavBar from './containers/NavBar';
 import GifsContainer from './containers/GifsContainer';
+import Counter from './components/Counter';
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path='/hello'><Hello helloTranslations={ helloTranslations } /></Route>
           <Route path='/hellofunctional'><FunctionalHello helloTranslations={ helloTranslations } /></Route>
           <Route path='/gifs'><GifsContainer /></Route>
+          <Route path='/counter'><Counter /></Route>
           <Route path='/'><Home /></Route>
         </Switch>
       </div>

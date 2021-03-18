@@ -26,6 +26,9 @@ const NavBar = () => {
         <li>
           <NavLink to='/gifs'>Gifs</NavLink>
         </li>
+        <li>
+          <NavLink to='/counter'>Counter</NavLink>
+        </li>
       </ul>
     </div>
   )
