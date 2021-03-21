@@ -29,6 +29,9 @@ const NavBar = () => {
         <li>
           <NavLink to='/counter'>Counter</NavLink>
         </li>
+        <li>
+          <NavLink to='/pokemon'>Pokemon</NavLink>
+        </li>
       </ul>
     </div>
   )
