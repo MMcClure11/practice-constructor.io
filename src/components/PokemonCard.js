@@ -1,13 +1,13 @@
 import React from 'react'
 
-const PokemonCard = (props) => {
+const PokemonCard = ({ pokemon, id}) => {
   return (
-    <div>
-      <h2>{props.pokemon.name.toUpperCase()}</h2>
+    <>
+      <h2>{pokemon.name.toUpperCase()}</h2>
       <img 
-      src={`https://pokeres.bastionbot.org/images/pokemon/${props.id}.png`}
-      alt={`${props.pokemon.name} image`} />
-    </div>
+      src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`}
+      alt={`${pokemon.name} image`} />
+    </>
   )
 }
 
