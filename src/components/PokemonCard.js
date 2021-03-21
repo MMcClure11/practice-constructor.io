@@ -6,7 +6,7 @@ const PokemonCard = ({ pokemon, id}) => {
       <h2>{pokemon.name.toUpperCase()}</h2>
       <img 
       src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`}
-      alt={`${pokemon.name} image`} />
+      alt={`${pokemon.name}`} />
     </>
   )
 }
