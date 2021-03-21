@@ -6,7 +6,7 @@ const PokemonCard = (props) => {
       <h2>{props.pokemon.name.toUpperCase()}</h2>
       <img 
       src={`https://pokeres.bastionbot.org/images/pokemon/${props.id}.png`}
-      alt={`${props.name} pic`} />
+      alt={`${props.pokemon.name} image`} />
     </div>
   )
 }
